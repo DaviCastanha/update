@@ -1,0 +1,50 @@
+name: Heartbeat Commits
+
+on:
+  schedule:
+    - cron: "*/18 12-22 * * *"   # roda a cada 15 min na janela 9h–18h
+  workflow_dispatch:
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Decide if commit should happen
+        id: decide
+        run: |
+          # Gera um número aleatório 0–9
+          r=$(( RANDOM % 10 ))
+          echo "random=$r" >> $GITHUB_OUTPUT
+          # Somente se r <= 2 (30% chance) faz commit
+          if [ $r -le 2 ]; then
+            echo "do_commit=yes" >> $GITHUB_OUTPUT
+          else
+            echo "do_commit=no" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Stop if no commit
+        if: steps.decide.outputs.do_commit == 'no'
+        run: echo "Pulando commit..."
+
+      - name: Update heartbeat
+        if: steps.decide.outputs.do_commit == 'yes'
+        run: |
+          echo "Atualizado em: $(date)" >> heartbeat.md
+
+      - name: Commit changes
+        if: steps.decide.outputs.do_commit == 'yes'
+        run: |
+          git config user.name "DaviCastanha"
+          git config user.email "davicastanha.esc@gmail.com"
+          git add heartbeat.md
+          git commit -m "Heartbeat $(date)"
+
+      - name: Push changes
+        if: steps.decide.outputs.do_commit == 'yes'
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
