@@ -2,7 +2,7 @@ name: Heartbeat Commits
 
 on:
   schedule:
-    - cron: "*/18 12-22 * * *"   # roda a cada 15 min na janela 9h–18h
+    - cron: "*/18 12-22 * * 1-5"   # roda a cada 15 min na janela 9h–18h
   workflow_dispatch:
 
 jobs:
