@@ -389,3 +389,4 @@ Atualizado em: Wed Mar  4 19:07:23 UTC 2026
 Atualizado em: Wed Mar  4 19:50:46 UTC 2026
 Atualizado em: Wed Mar  4 20:18:32 UTC 2026
 Atualizado em: Thu Mar  5 12:43:57 UTC 2026
+Atualizado em: Thu Mar  5 13:50:47 UTC 2026
