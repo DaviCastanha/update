@@ -504,3 +504,4 @@ Atualizado em: Mon Apr 20 13:16:04 UTC 2026
 Atualizado em: Mon Apr 20 19:48:49 UTC 2026
 Atualizado em: Tue Apr 21 13:09:23 UTC 2026
 Atualizado em: Tue Apr 21 17:16:34 UTC 2026
+Atualizado em: Wed Apr 22 16:00:14 UTC 2026
