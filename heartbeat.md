@@ -569,3 +569,4 @@ Atualizado em: Thu May 28 15:35:26 UTC 2026
 Atualizado em: Fri May 29 20:22:51 UTC 2026
 Atualizado em: Fri May 29 23:41:22 UTC 2026
 Atualizado em: Mon Jun  1 23:09:48 UTC 2026
+Atualizado em: Tue Jun  2 22:12:52 UTC 2026
