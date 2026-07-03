@@ -600,3 +600,4 @@ Atualizado em: Tue Jun 30 14:04:20 UTC 2026
 Atualizado em: Thu Jul  2 17:40:20 UTC 2026
 Atualizado em: Thu Jul  2 19:02:05 UTC 2026
 Atualizado em: Thu Jul  2 21:53:28 UTC 2026
+Atualizado em: Fri Jul  3 21:31:18 UTC 2026
